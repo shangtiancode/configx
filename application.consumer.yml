@@ -1,6 +1,6 @@
 spring:
   application:
-    name: mubbo-consumer
+    name: configx-consumer
 server:
   port: 8888
 mubbo:

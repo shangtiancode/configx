@@ -4,19 +4,18 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.alishangtian.macos</groupId>
-    <artifactId>macos-parent</artifactId>
+    <groupId>com.alishangtian.configx</groupId>
+    <artifactId>configx-parent</artifactId>
     <packaging>pom</packaging>
     <version>0.0.1.release</version>
     <modules>
-        <module>macos-common</module>
-        <module>macos-broker</module>
+        <module>configx-common</module>
+        <module>configx-broker</module>
         <module>netty-remoting</module>
         <module>netty-client</module>
-        <module>mubbo-spring-boot-starter</module>
-        <module>mubbo-core</module>
-        <module>mubbo-consumer</module>
-        <module>mubbo-provider</module>
+        <module>configx-spring-boot-starter</module>
+        <module>configx-core</module>
+        <module>configx-example</module>
     </modules>
 
     <parent>
@@ -32,7 +31,7 @@
         <maven.compiler.target>1.8</maven.compiler.target>
         <java.version>1.8</java.version>
         <springboot.version>2.3.0.RELEASE</springboot.version>
-        <macos.version>0.0.1.release</macos.version>
+        <configx.version>0.0.1.release</configx.version>
     </properties>
 
     <dependencies>
@@ -80,44 +79,39 @@
                 <version>4.1.56.Final</version>
             </dependency>
             <dependency>
-                <groupId>com.alishangtian.macos</groupId>
-                <artifactId>macos-broker</artifactId>
+                <groupId>com.alishangtian.configx</groupId>
+                <artifactId>configx-broker</artifactId>
                 <version>${macos.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alishangtian.macos</groupId>
-                <artifactId>macos-common</artifactId>
-                <version>${macos.version}</version>
+                <groupId>com.alishangtian.configx</groupId>
+                <artifactId>configx-common</artifactId>
+                <version>${configx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alishangtian.macos</groupId>
+                <groupId>com.alishangtian.configx</groupId>
                 <artifactId>netty-client</artifactId>
-                <version>${macos.version}</version>
+                <version>${configx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alishangtian.macos</groupId>
+                <groupId>com.alishangtian.configx</groupId>
                 <artifactId>netty-remoting</artifactId>
-                <version>${macos.version}</version>
+                <version>${configx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alishangtian.mubbo</groupId>
-                <artifactId>mubbo-core</artifactId>
-                <version>${macos.version}</version>
+                <groupId>com.alishangtian.configx</groupId>
+                <artifactId>configx-core</artifactId>
+                <version>${configx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alishangtian.mubbo</groupId>
-                <artifactId>mubbo-spring-boot-starter</artifactId>
-                <version>${macos.version}</version>
+                <groupId>com.alishangtian.configx</groupId>
+                <artifactId>configx-spring-boot-starter</artifactId>
+                <version>${configx.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.alishangtian.mubbo</groupId>
-                <artifactId>mubbo-provider</artifactId>
-                <version>${macos.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.alishangtian.mubbo</groupId>
-                <artifactId>mubbo-consumer</artifactId>
-                <version>${macos.version}</version>
+                <groupId>com.alishangtian.configx</groupId>
+                <artifactId>configx-example</artifactId>
+                <version>${configx.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
