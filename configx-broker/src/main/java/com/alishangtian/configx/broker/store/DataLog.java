@@ -14,6 +14,10 @@ import java.io.Serializable;
 @Builder
 public class DataLog implements Serializable {
     /**
+     * group
+     */
+    private String group;
+    /**
      * key
      */
     private String key;
