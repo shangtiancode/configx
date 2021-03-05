@@ -26,6 +26,10 @@ public class DataLog implements Serializable {
      */
     private String value;
     /**
+     * 操作 详见：DataOperateEnum
+     */
+    private String operate;
+    /**
      * 全局索引
      */
     private Long index;

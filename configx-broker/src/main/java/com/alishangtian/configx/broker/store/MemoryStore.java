@@ -38,4 +38,13 @@ public class MemoryStore {
         return true;
     }
 
+    /**
+     * 持久化数据  DataLog -> StoreData
+     *
+     * @return
+     */
+    public boolean persisData() {
+        return true;
+    }
+
 }

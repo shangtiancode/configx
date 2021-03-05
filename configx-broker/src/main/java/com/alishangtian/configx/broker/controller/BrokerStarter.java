@@ -2,6 +2,7 @@ package com.alishangtian.configx.broker.controller;
 
 import com.alishangtian.configx.broker.config.BrokerConfig;
 import com.alishangtian.configx.broker.processor.*;
+import com.alishangtian.configx.broker.store.MemoryStore;
 import com.alishangtian.configx.common.protocol.PingRequestBody;
 import com.alishangtian.configx.common.protocol.PublishServiceBody;
 import com.alishangtian.configx.common.protocol.RequestCode;
@@ -47,6 +48,8 @@ import java.util.stream.Collectors;
 @Log4j2
 @Data
 public class BrokerStarter {
+
+    private MemoryStore memoryStore = MemoryStore.builder().build();
 
     /**
      * field
